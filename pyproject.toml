@@ -7,6 +7,7 @@ authors = ["Chiko Liu"]
 [tool.poetry.dependencies]
 python = "^3.9"
 Django = "^4.0"
+django-crispy-forms = "^1.13.0"
 
 [tool.poetry.dev-dependencies]
 

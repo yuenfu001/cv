@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+<title>
+display name
+</title>
+</head>
+<a href="{% url 'register' %}">Register a name here</a>
+<h3> Registered names</h3>
+<ol>
+    {% for name in total_names %}
+    <a href="{% url 'person' name.id %}"><li>{{name.first_name}} {{name.last_name}} </li></a>
+    {% endfor %}
+</ol>
+ the total number of register names are : {{count_all_names}}
+
+<h3> list for registered states</h3>
+<ol>
+    {% for state in states %}
+    <li>{{state.name}} </li>
+    {% endfor %}
+</ol>
+the total number of register states are : {{count_state}}
+<body>
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<a href="{% url 'disp' %}"> back to display info </a>
+<div class="card-body">
+          <table class="table table-responsive-sm">
+              <thead>
+                  <tr>
+                      <th>Id</th>
+                      <th>Name</th>
+                      <th>state</th>
+                      <th>Date of birth</th>
+                      
+                  </tr>
+              </thead>
+              <tbody>
+                  
+                    <tr>
+                        <td>{{infos.first_name}}</td>
+                        <td>{{infos.last_name}}</td>
+                        <td>{{infos.state_of_origin}}</td>
+                        <td>{{infos.date_of_birth}}</td>
+                        
+                        <td>
+                          <a class="btn btn-success" title="Add Subject" href="">
+                              <i class="fa fa-search-plus"></i>
+                          </a>
+                          <a class="btn btn-info" title="View Subject List" href="">
+                              <i class="fa fa-eye"></i>
+                          </a>
+                        </td>
+                    </tr>
+                    
+                  
+              </tbody>
+          </table>
+      </div>
